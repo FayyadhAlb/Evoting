@@ -15,7 +15,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void next(View view) {
-        Intent intent = new Intent(MainActivity.this,DashboardActivity.class);
+        Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void vote(View view) {
+        Intent intent = new Intent(MainActivity.this, VoteActivity.class);
         startActivity(intent);
     }
 }

@@ -7,209 +7,213 @@
     android:background="@mipmap/background"
     tools:context=".MainActivity">
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:orientation="vertical">
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="20dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-      <TextView
-          android:id="@+id/txApp"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="MY DASHBOARD"
-          android:textColor="@color/white"
-          android:textSize="25dp">
-
-      </TextView>
-
-      <TextView
-          android:id="@+id/txName"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_below="@+id/txApp"
-          android:layout_marginTop="20dp"
-          android:text="Muhammad Akbar Azmi"
-          android:textColor="@color/white"
-          android:textSize="15dp">
-
-      </TextView>
-
-      <TextView
-          android:id="@+id/txNim"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_below="@+id/txName"
-          android:layout_marginTop="20dp"
-          android:text="1941720132"
-          android:textColor="@color/white"
-          android:textSize="10dp">
-
-      </TextView>
-
-
-    </RelativeLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:alignmentMode="alignMargins"
-        android:columnCount="2"
-        android:columnOrderPreserved="false"
-        android:rowCount="2">
-
-      <androidx.cardview.widget.CardView
-          android:id="@+id/card1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_rowWeight="1"
-          android:layout_columnWeight="1"
-          android:layout_margin="10dp"
-          app:cardCornerRadius="15dp"
-          app:cardElevation="8dp">
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16sp">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
 
-          <ImageView
-              android:layout_width="80dp"
-              android:layout_height="80dp"
-              android:src="@drawable/evoting2">
+            <TextView
+                android:id="@+id/txApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY DASHBOARD"
+                android:textColor="@color/white"
+                android:textSize="25dp">
 
-          </ImageView>
+            </TextView>
 
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginTop="12dp"
-              android:text="VOTE"
-              android:textSize="13dp">
+            <TextView
+                android:id="@+id/txName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txApp"
+                android:layout_marginTop="20dp"
+                android:text="Muhammad Akbar Azmi"
+                android:textColor="@color/white"
+                android:textSize="15dp">
 
-          </TextView>
+            </TextView>
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/txNim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txName"
+                android:layout_marginTop="20dp"
+                android:text="1941720132"
+                android:textColor="@color/white"
+                android:textSize="10dp">
 
-      </androidx.cardview.widget.CardView>
+            </TextView>
 
-      <androidx.cardview.widget.CardView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_rowWeight="1"
-          android:layout_columnWeight="1"
-          android:layout_margin="10dp"
-          app:cardCornerRadius="15dp"
-          app:cardElevation="8dp">
 
-        <LinearLayout
+        </RelativeLayout>
+
+        <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16sp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="2">
 
-          <ImageView
-              android:layout_width="80dp"
-              android:layout_height="80dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
 
-          </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16sp">
 
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginTop="12dp"
-              android:text="VOTE"
-              android:textSize="13dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/evoting2">
 
-          </TextView>
-
-        </LinearLayout>
-
-      </androidx.cardview.widget.CardView>
-
-      <androidx.cardview.widget.CardView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_rowWeight="1"
-          android:layout_columnWeight="1"
-          android:layout_margin="10dp"
-          app:cardCornerRadius="15dp"
-          app:cardElevation="8dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16sp">
-
-          <ImageView
-              android:layout_width="80dp"
-              android:layout_height="80dp">
-
-          </ImageView>
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginTop="12dp"
-              android:text="VOTE"
-              android:textSize="13dp">
-
-          </TextView>
-
-        </LinearLayout>
-
-      </androidx.cardview.widget.CardView>
-
-      <androidx.cardview.widget.CardView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_rowWeight="1"
-          android:layout_columnWeight="1"
-          android:layout_margin="10dp"
-          app:cardCornerRadius="15dp"
-          app:cardElevation="8dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16sp">
-
-          <ImageView
-              android:layout_width="80dp"
-              android:layout_height="80dp">
-
-          </ImageView>
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginTop="12dp"
-              android:text="VOTE"
-              android:textSize="13dp">
-
-          </TextView>
-
-        </LinearLayout>
-
-      </androidx.cardview.widget.CardView>
+                    </ImageView>
 
 
-    </GridLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/menuVote2"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="VOTE"
+                        android:textSize="8dp">
 
-  </LinearLayout>
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16sp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp">
+
+                    </ImageView>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/menuVote3"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="VOTE"
+                        android:textSize="8dp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16sp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp">
+
+                    </ImageView>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/menuVote4"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="VOTE"
+                        android:textSize="8dp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16sp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp">
+
+                    </ImageView>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/menuVote"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="VOTE"
+                        android:textSize="8dp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
 
 </ScrollView>
