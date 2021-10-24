@@ -3,14 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_dashboard.xml" value="0.16927083333333334" />
+        <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_dashboard.xml" value="0.16203703703703703" />
+        <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_hasil.xml" value="0.16203703703703703" />
         <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_login.xml" value="0.16927083333333334" />
         <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_main.xml" value="0.16927083333333334" />
         <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_menu_view.xml" value="0.16927083333333334" />
         <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_overview.xml" value="0.16927083333333334" />
         <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_profile_user.xml" value="0.16927083333333334" />
         <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_spalsh.xml" value="0.16927083333333334" />
-        <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_vote.xml" value="0.16927083333333334" />
+        <entry key="..\:/Random/PemogramanMobile/Evoting/app/src/main/res/layout/activity_vote.xml" value="0.16203703703703703" />
       </map>
     </option>
   </component>

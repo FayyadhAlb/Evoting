@@ -23,9 +23,33 @@
                 android:id="@+id/txApp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PROFILE USER"
+                android:text="MENU HASIL SEMENTARA"
                 android:textColor="@color/white"
-                android:textSize="25dp">
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txApp"
+                android:layout_marginTop="20dp"
+                android:text="Muhammad Akbar Azmi"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txNim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txName"
+                android:layout_marginTop="20dp"
+                android:text="1941720132"
+                android:textColor="@color/white"
+                android:textSize="10dp">
 
             </TextView>
 
@@ -63,60 +87,42 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="PROFILE"
-                        android:textSize="20dp">
+                        android:text="Hasil Vote Sementara"
+                        android:textSize="25dp">
 
                     </TextView>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="1941720132"
-                        android:textSize="14dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity=""
+                        android:orientation="horizontal"
+                        android:padding="16sp">
 
-                    </TextView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/graf1">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Muhammad Akbar Azmi"
-                        android:textSize="15dp">
-
-                    </TextView>
+                        </ImageView>
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Teknologi Informasi"
-                        android:textSize="13dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="150dp"
+                            android:src="@drawable/graf2">
 
-                    </TextView>
+                        </ImageView>
+                    </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Teknik Informatika"
-                        android:textSize="13dp">
-
-                    </TextView>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
         </GridLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/gridly1"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"/>
 
     </LinearLayout>
 

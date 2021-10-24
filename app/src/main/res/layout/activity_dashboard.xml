@@ -1,219 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="20dp">
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/txApp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MY DASHBOARD"
-                android:textColor="@color/white"
-                android:textSize="25dp">
+                android:text="DASHBOARD"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
 
-            </TextView>
+            <View
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="6dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/blue_1"/>
 
-            <TextView
-                android:id="@+id/txName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txApp"
-                android:layout_marginTop="20dp"
-                android:text="Muhammad Akbar Azmi"
-                android:textColor="@color/white"
-                android:textSize="15dp">
+        </LinearLayout>
 
-            </TextView>
-
-            <TextView
-                android:id="@+id/txNim"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txName"
-                android:layout_marginTop="20dp"
-                android:text="1941720132"
-                android:textColor="@color/white"
-                android:textSize="10dp">
-
-            </TextView>
-
-
-        </RelativeLayout>
-
-        <GridLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:alignmentMode="alignMargins"
-            android:columnCount="2"
-            android:columnOrderPreserved="false"
-            android:rowCount="2">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16sp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/evoting2">
-
-                    </ImageView>
-
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/menuVote2"
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:text="VOTE"
-                        android:textSize="8dp">
-
-                    </androidx.appcompat.widget.AppCompatButton>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16sp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp">
-
-                    </ImageView>
-
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/menuVote3"
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:text="VOTE"
-                        android:textSize="8dp">
-
-                    </androidx.appcompat.widget.AppCompatButton>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16sp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp">
-
-                    </ImageView>
-
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/menuVote4"
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:text="VOTE"
-                        android:textSize="8dp">
-
-                    </androidx.appcompat.widget.AppCompatButton>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16sp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp">
-
-                    </ImageView>
-
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/menuVote"
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:text="VOTE"
-                        android:textSize="8dp">
-
-                    </androidx.appcompat.widget.AppCompatButton>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-        </GridLayout>
+            android:text="Muhammad Akbar Azmi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1941720132"/>
 
     </LinearLayout>
 
-</ScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        app:cardElevation="13dp"
+        app:cardCornerRadius="6dp"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/blue_1">
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-Voting KAMPUS"
+                    android:textColor="#fff"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aplikasi Mobile E-voting"
+                    android:textColor="#fff"
+                    android:textSize="10dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/logopolinema" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Vote"
+                    android:textColor="#5e5e5e"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/vote" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu View"
+                    android:textColor="#5e5e5e"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/view" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#5e5e5e"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/profile1" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil"
+                    android:textColor="#5e5e5e"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/hasil" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
